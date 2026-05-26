@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 400,
-              "y": 260.00000000000006
+              "x": 200,
+              "y": 270
             },
             "size": {
               "width": 180,
@@ -256,8 +256,8 @@
           },
           {
             "position": {
-              "x": 710,
-              "y": 330
+              "x": 720,
+              "y": 450
             },
             "size": {
               "width": 170,
@@ -457,7 +457,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "logowanie",
+              "name": "zapytanie SQL",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -471,17 +471,69 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "logowanie"
+              "zapytanie SQL"
             ],
-            "id": "7d605684-7b6c-4313-8559-e45a1c73b6d7",
+            "id": "7255a2f5-43ff-4c62-9c30-e66c5bc328b3",
             "source": {
-              "x": 580,
+              "cell": "7b74bc4c-7070-4a70-9fe0-68649e2ff2ce",
+              "port": "66b4b77b-fe26-4acc-bb6b-e24eb57422e2"
+            },
+            "target": {
+              "cell": "191d9d7f-e4f9-4752-987b-fb9f2a8ec56d",
+              "port": "26feecee-e936-4940-a575-88ae78f1ff88"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "dane użytkownika",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "dane użytkownika"
+            ],
+            "id": "7fcfce42-fcb7-4fc4-865a-f51cd38edb85",
+            "source": {
+              "x": 1256,
               "y": 300
             },
             "target": {
-              "cell": "7ea0f961-e6de-49bc-845d-1ed962eb4241",
-              "port": "f9c3fed4-3e6e-422f-8d49-07070139557a"
-            }
+              "cell": "7b74bc4c-7070-4a70-9fe0-68649e2ff2ce",
+              "port": "66b4b77b-fe26-4acc-bb6b-e24eb57422e2"
+            },
+            "vertices": [
+              {
+                "x": 1256,
+                "y": 515
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -521,8 +573,8 @@
             ],
             "id": "0cc8f126-22c0-45d6-9f69-fc2b8516e60f",
             "source": {
-              "x": 790,
-              "y": 250
+              "cell": "7ea0f961-e6de-49bc-845d-1ed962eb4241",
+              "port": "484407dd-312d-45b5-ab57-35239f2b273f"
             },
             "target": {
               "cell": "7b74bc4c-7070-4a70-9fe0-68649e2ff2ce",
@@ -549,7 +601,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "odpowiedź",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -563,16 +615,68 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "odpowiedź"
             ],
-            "id": "7255a2f5-43ff-4c62-9c30-e66c5bc328b3",
+            "id": "912da254-24ae-442a-8840-b9e0f7476bdb",
             "source": {
-              "cell": "7b74bc4c-7070-4a70-9fe0-68649e2ff2ce",
-              "port": "66b4b77b-fe26-4acc-bb6b-e24eb57422e2"
+              "x": 770,
+              "y": 215
             },
             "target": {
-              "cell": "191d9d7f-e4f9-4752-987b-fb9f2a8ec56d",
-              "port": "26feecee-e936-4940-a575-88ae78f1ff88"
+              "x": 750,
+              "y": 470
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "logowanie",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "logowanie"
+            ],
+            "id": "7d605684-7b6c-4313-8559-e45a1c73b6d7",
+            "source": {
+              "x": 380,
+              "y": 320
+            },
+            "target": {
+              "cell": "7ea0f961-e6de-49bc-845d-1ed962eb4241",
+              "port": "f9c3fed4-3e6e-422f-8d49-07070139557a"
             }
           },
           {
@@ -719,7 +823,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "widok stronny",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -733,7 +837,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "widok stronny"
             ],
             "id": "2035ff33-6766-4ca4-adfc-c1c3767a3239",
             "source": {
