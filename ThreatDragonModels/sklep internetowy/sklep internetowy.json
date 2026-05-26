@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "6c03e601-963c-47ff-8cba-2c1df90b5b62",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "użytkownik",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "7ea0f961-e6de-49bc-845d-1ed962eb4241",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "aplikacja frontend",
@@ -275,6 +275,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -358,7 +359,6 @@
               ]
             },
             "id": "7b74bc4c-7070-4a70-9fe0-68649e2ff2ce",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "aplikacja backend",
@@ -599,6 +599,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -682,7 +683,6 @@
               ]
             },
             "id": "191d9d7f-e4f9-4752-987b-fb9f2a8ec56d",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "data storage",
@@ -737,12 +737,12 @@
             ],
             "id": "2035ff33-6766-4ca4-adfc-c1c3767a3239",
             "source": {
-              "x": 400,
-              "y": 260
+              "x": 810,
+              "y": 120
             },
             "target": {
-              "cell": "7ea0f961-e6de-49bc-845d-1ed962eb4241",
-              "port": "ee181d70-0809-40a9-893c-e0572325fd9d"
+              "cell": "6c03e601-963c-47ff-8cba-2c1df90b5b62",
+              "port": "69a6b217-8cb8-418c-90ce-d8ffb76d4feb"
             }
           }
         ]
